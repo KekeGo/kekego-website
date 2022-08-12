@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+@layer base {
+  html {
+    font-family: Catamaran, system-ui, sans-serif;
+    font-size: 14px;
+  }
+}
+
+@layer components {
+  body {
+    background: white;
+    color: black;
+  }
+
+  section {
+    @apply px-8 max-w-[1440px] /* mb-20 */;
+  }
+
+  section#hero {
+    @apply mx-auto bg-cover bg-kekego bg-no-repeat bg-center max-w-none lg:flex items-center justify-center h-[100vh] sm:min-h-[100vh] bg-primary text-white overflow-clip;
+  }
+}
